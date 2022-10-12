@@ -40,7 +40,7 @@ const SignupPage = () => {
                     if (response.data.data.type && response.data.data.location && response.data.data.location.type) {
                         navigate('/', { replace: true })
                     }
-                    localStorage.setItem('user', JSON.stringify(response.data));
+                    // localStorage.setItem('user', JSON.stringify(response.data));
                     setUser(response.data.data);
                 })
                 .catch(e => console.log(e));
@@ -86,7 +86,7 @@ const SignupPage = () => {
             })
                 .then((response) => {
                     localStorage.setItem('access_token', response.data.data.accessToken);
-                    localStorage.setItem('user', JSON.stringify(updatingUser));
+                    // localStorage.setItem('user', JSON.stringify(updatingUser));
                     setUser(updatingUser);
                     navigate("/", { replace: true });
                 })

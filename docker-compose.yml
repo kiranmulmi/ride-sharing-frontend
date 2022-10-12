@@ -1,8 +1,7 @@
 version: '3.7'
 
 services:
-
-  sample:
+  ride_sharing_frontend:
     container_name: ride-sharing-frontend
     build:
       context: .

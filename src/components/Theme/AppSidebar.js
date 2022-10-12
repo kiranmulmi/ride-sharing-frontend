@@ -47,7 +47,7 @@ const AppSidebar = () => {
         })
             .then((response) => {
                 localStorage.setItem('access_token', response.data.data.accessToken);
-                localStorage.setItem('user', JSON.stringify(updatingUser));
+                // localStorage.setItem('user', JSON.stringify(updatingUser));
                 setUser(updatingUser);
                 navigate('/');
             })
