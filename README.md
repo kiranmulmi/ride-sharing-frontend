@@ -1,6 +1,10 @@
 # Ride Sharing App (Frontend)
 
 This is ride sharing app frontend in React JS
+## Dependencies
+- Docker Environment
+- Google Map Api Key
+- Map API key should have `places` library access
 
 ## Environment setup
 
@@ -21,4 +25,7 @@ Run the following docker compose command to build and run the app
 ```sh
 docker-compose up -d --build
 ```
+
+## API Documentation
+https://documenter.getpostman.com/view/10187762/2s83zmMNN1
 
