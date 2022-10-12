@@ -1,12 +1,16 @@
 # ==== CONFIGURE =====
 FROM node:16-alpine 
+# set working directory
 WORKDIR /app
-COPY . .
-# ==== BUILD =====
-RUN npm ci 
-RUN npm run build
-# ==== RUN =======
-ENV NODE_ENV production
-EXPOSE 3000
-# Start the app
-CMD [ "npx", "serve", "build" ]
+
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --silent
+RUN npm install react-scripts@5.0.1 -g --silent
+
+COPY . ./
+CMD ["npm", "start"]
