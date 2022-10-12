@@ -1,0 +1,44 @@
+.login-input-wrap {
+    text-align: center;
+    width: 400px;
+    background: #e7e7e7;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.complete-signup-wrap {
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+}
+
+#components-layout-demo-side .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+.sidebar-profile {
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sidebar-mode-btn {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    bottom: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
