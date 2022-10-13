@@ -2,6 +2,8 @@ import { AppLayout } from "./components/Theme";
 import { HistoryPage, ProfilePage, SettingPage } from "./pages/Account";
 import { LoginPage, Logout, SignupPage } from "./pages/Auth";
 import { City } from "./pages/City";
+import ErrorPage from "./pages/ErrorPage";
+import NotFound404 from "./pages/NotFound404";
 import { RideRequestPage } from "./pages/Rider";
 import ProtectedRoute from "./ProtectedRoute";
 
@@ -42,5 +44,13 @@ export const routesConfig = [
                 element: <Logout />,
             },
         ],
+    },
+    {
+        path: "/serverError",
+        element: <ErrorPage/>,
+    },
+    {
+        path: "*",
+        element: <NotFound404/>,
     },
 ];

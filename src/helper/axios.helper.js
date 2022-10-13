@@ -12,6 +12,8 @@ export const axiosGET = (URL) => {
                     console.log(error);
                     if(error.response.status === 401) {
                         window.location = '/login'
+                    } else if (error.code === 'ERR_NETWORK' || error.response.status === 500) {
+                        window.location = '/serverError'
                     }
                     reject(error);
                 });
@@ -34,6 +36,8 @@ export const axiosPOST = (URL, data) => {
                     console.log(error);
                     if(error.response.status === 401) {
                         window.location = '/login'
+                    } else if (error.code === 'ERR_NETWORK' || error.response.status === 500) {
+                        window.location = '/serverError'
                     }
                     reject(error);
                 });
@@ -55,6 +59,8 @@ export const axiosPATCH = (URL, data) => {
                     console.log(error);
                     if(error.response.status === 401) {
                         window.location = '/login'
+                    } else if (error.code === 'ERR_NETWORK' || error.response.status === 500) {
+                        window.location = '/serverError'
                     }
                     reject(error);
                 });
