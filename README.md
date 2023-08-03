@@ -26,6 +26,6 @@ Run the following docker compose command to build and run the app
 docker-compose up -d --build
 ```
 
-## API Documentation
+## API Documentations
 https://documenter.getpostman.com/view/10187762/2s83zmMNN1
 
